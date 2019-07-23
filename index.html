@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="PLEXUSchat">
+  <link rel="apple-touch-icon" href="img/180.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/180.png">
+  <link href="img/1024.png" sizes="1024x1024" rel="apple-touch-startup-image" />
+  <title>PLEXUS DEMO</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <script src="moment.js"></script>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<style>
+  .gradient-text {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 20%;
+    margin-left: 22%;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gradient-text2 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    background: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 0%;
+    margin: 0px;
+  }
+
+  .grdInput {
+    outline: none;
+    padding: 5px;
+    border-left: 1px solid rgb(180, 180, 180);
+    border-right: 1px solid rgb(180, 180, 180);
+    border-top: 1px solid rgb(180, 180, 180);
+    border-bottom: 2px solid rgb(100, 100, 100);
+    border-radius: 8px;
+    font-family: Lucida;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    background-color: white;
+    transition: border .3s;
+  }
+
+  .carbon-fiber {
+    background:
+      linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+      linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+      linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+      linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+      linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+      linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+  }
+
+  .cls-1 {
+    fill: blue;
+    fill-rule: evenodd;
+  }
+</style>
+
+<body>
+  <section id="enterName" class="border" style="">
+    <h1 class="gradient-text" style="font-size: 30px;">PLEXUS
+      <svg style="margin: 0; " class="animated bounce infinite" id="typing_bubble" data-name="typing bubble" xmlns="http://www.w3.org/2000/svg" width="120" height="20" viewBox="0 0 120 66">
+        <g id="bubble">
+          <path class="cls-1" d="M152,166H108a29.848,29.848,0,0,1-16.03-4.647,10.993,10.993,0,1,1-12.7-16.692A30.008,30.008,0,0,1,108,106h44A30,30,0,0,1,152,166Zm-85,6a5,5,0,1,1,5-5A5,5,0,0,1,67,172Z" transform="translate(-200 -106)" />
+        </g>
+      </svg>
+    </h1>
+    <div class="" style="border-radius: 15px;">
+      <div style="margin-left: 20%;">
+        <input id="nameField" class="grdInput" style="font-family: Poppins; padding: 4%;" type="text" name="mdp" placeholder="Enter your name" id="mdpId" style="position:absolute" required />
+        <br><br>
+        <button id="letsChat" class="carbon-fiber" style="border: 1px solid white; padding: 2%; width: 40%; height: 30px; border-radius: 25px; color: #fff;">LET'S CHAT</button>
+        <!-- <img title="Vérifiez votre mot de passe" OnMouseDown="affMdp(1)" OnMouseUp="effMdp()" src="https://fo.nepo.fr/img/anim/oeilVide.png" class="oeil"> -->
+      </div>
+    </div>
+  </section>
+  <section id="messageScreen">
+    <section class="animated slideInDown"style=" background-image:
+      linear-gradient(to bottom, rgba(13, 19, 26, 0.5), rgba(13, 19, 26, 0.85)),
+      url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80'); background-size: auto; background-repeat: no-repeat;  background-size: 100% 100%;  border-radius: 5px; box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1); padding: 5%;">
+      <h4 class="gradient-text2" style="display: inline;">Capital Factory DEMO</h4>
+      <h6 class="gradient-text2" style="display: inline-block; float: right;">128 ONLINE</h6>
+
+    </section>
+
+    <div class="border">
+      <div class="responsive-html5-chat">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- DEMO -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+
+  <script src="./script.js"></script>
+
+
+
+
+</body>
+
+</html>

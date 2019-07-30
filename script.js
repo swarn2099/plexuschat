@@ -7,12 +7,14 @@ $(document).ready(function() {
     dataType: 'json',
     contentType: 'application/json',
     headers: {
-      Authorization: 'Basic eLnFScrfnkVErfIl='
+      'Authorization': 'Basic eLnFScrfnkVErfIl'
     },
     success: function(json) {
+      console.log("SUCCESS!");
       console.log('Test', json);
     },
     error: function(err) {
+      console.log("ERROR!");
       console.log('Error', err);
 
     }

@@ -1,10 +1,33 @@
 var myName;
 $(document).ready(function() {
+
+  $.ajax({
+    url: 'http://acccnational.com:9090/plugins/restapi/v1/chatrooms?type=all',
+    method: 'GET',
+    dataType: 'json',
+    contentType: 'application/json',
+    headers: {
+      Authorization: 'Basic eLnFScrfnkVErfIl='
+    },
+    success: function(json) {
+      console.log('Test', json);
+    },
+    error: function(err) {
+      console.log('Error', err);
+
+    }
+
+  });
+
+
+
+
+
   console.log("ready!");
   $('#messageScreen').hide();
   $("#letsChat").click(function() {
     $('#enterName').hide();
-     myName = document.getElementById('nameField').value;
+    myName = document.getElementById('nameField').value;
     renderChat(myName);
     $('#messageScreen').show();
   });
@@ -44,7 +67,7 @@ function responsiveChat(element) {
         "&nbsp;&nbsp;" +
         clock;
 
-      responsiveChatPush('.chat', '' + myName + '', 'me', ''+moment().format('h:mm:ss a')+'', ''+message+'');
+      responsiveChatPush('.chat', '' + myName + '', 'me', '' + moment().format('h:mm:ss a') + '', '' + message + '');
 
       setTimeout(function() {
         $(element + ' > span').addClass("spinner");

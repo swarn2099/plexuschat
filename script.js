@@ -2,12 +2,12 @@ var myName;
 $(document).ready(function() {
 
   $.ajax({
-    url: 'https://acccnational.com:9090/plugins/restapi/v1/chatrooms?type=all',
+    url: 'http://acccnational.com:9090/plugins/restapi/v1/chatrooms?type=all',
     method: 'GET',
     dataType: 'json',
     contentType: 'application/json',
     headers: {
-      'Authorization': 'Basic eLnFScrfnkVErfI=(server,server)'
+      'Authorization': 'Basic eLnFScrfnkVErfI=(username: server,password: server)'
     },
     success: function(json) {
       console.log("SUCCESS!");
